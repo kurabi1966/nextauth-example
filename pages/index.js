@@ -29,7 +29,10 @@ export default function Home() {
             <>
               <img src={session.user.image} /><br/>
               You are signed in as: {session.user.email} - {session.user.name}<br/>
-              <div>You can now access permetioned site pages</div>
+              <div>You can now access permetioned site pages</div><br/>
+              <div>
+                <Link href="/secret">Visit the secret page</Link>
+              </div><br/>
               <button onClick={signOut}>Sign Out</button>
               <br/>
               <div>
